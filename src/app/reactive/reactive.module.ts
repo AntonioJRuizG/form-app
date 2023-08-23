@@ -6,18 +6,15 @@ import { RegisterPageComponent } from './pages/register-page/register-page.compo
 import { BasicPageComponent } from './pages/basic-page/basic-page.component';
 import { DynamicPageComponent } from './pages/dynamic-page/dynamic-page.component';
 import { SwitchesPageComponent } from './pages/switches-page/switches-page.component';
-
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     RegisterPageComponent,
     BasicPageComponent,
     DynamicPageComponent,
-    SwitchesPageComponent
+    SwitchesPageComponent,
   ],
-  imports: [
-    CommonModule,
-    ReactiveRoutingModule
-  ]
+  imports: [CommonModule, ReactiveRoutingModule, ReactiveFormsModule],
 })
-export class ReactiveModule { }
+export class ReactiveModule {}
