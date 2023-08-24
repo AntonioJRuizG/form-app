@@ -15,7 +15,7 @@ export class EmailValidator implements AsyncValidator {
       (subscriber) => {
         console.log({ email });
 
-        if (email === 'fernando@google.com') {
+        if (email === 'example@mail.com') {
           subscriber.next({ emailTaken: true });
           subscriber.complete();
           // return;
